@@ -5,8 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - Email Writer</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; line-height: 1.6; color: #333; }
-    h1 { color: #222; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 850px;
+      margin: 40px auto;
+      line-height: 1.7;
+      color: #333;
+      padding: 0 16px;
+    }
+    h1, h2 {
+      color: #111;
+    }
+    a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
   </style>
 </head>
 <body>
@@ -14,32 +38,58 @@
   <p><strong>Effective Date:</strong> October 2025</p>
 
   <p>
-    Email Writer is a Chrome extension that helps users generate AI-powered email drafts directly within Gmail.
-    To provide this functionality, the extension temporarily sends the text you select or type
-    (such as your email body or prompt) to a secure backend server where the AI model processes and returns a response.
+    <strong>Email Writer</strong> is a Chrome extension that helps users generate AI-powered email replies directly within Gmail.
+    The extension is designed to respect user privacy and collect the minimum data necessary for core functionality.
   </p>
 
-  <h2>Data Handling</h2>
+  <h2>Data Collection and Usage</h2>
   <ul>
-    <li>User input (like email content or tone selection) is transmitted securely to our API for AI generation.</li>
-    <li>No personal information is permanently stored or shared with third parties.</li>
-    <li>All processing occurs over HTTPS and data is deleted automatically after generating the response.</li>
+    <li>
+      When a user requests an AI-generated email reply, the text entered or selected (such as the email body and tone preference)
+      is securely transmitted to our backend API for processing.
+    </li>
+    <li>
+      The backend temporarily uses this input to generate a response using a language model, then returns it immediately to the extension.
+      No personal data, message content, or generated responses are stored or shared.
+    </li>
+    <li>
+      The extension may use Chrome’s local storage only to save recent generation history for the user’s convenience.
+      This data remains entirely on the user’s device and is not transmitted anywhere.
+    </li>
   </ul>
 
   <h2>Permissions</h2>
   <p>
-    The extension requires limited permissions to interact with Gmail’s compose window,
-    save user preferences locally (tone, style), and send requests to the AI API endpoint.
+    The extension uses minimal permissions:
+  </p>
+  <ul>
+    <li><strong>Storage</strong> — to save user preferences (e.g., tone and generation history) locally on the device.</li>
+    <li><strong>Host permissions</strong> — to communicate securely with Gmail and the AI backend API.</li>
+  </ul>
+  <p>
+    The extension does <strong>not</strong> access or modify your Gmail messages beyond what is necessary to generate replies,
+    and does not collect browsing history or personal data.
   </p>
 
-  <h2>Your Control</h2>
+  <h2>Data Security</h2>
   <p>
-    You may remove the extension at any time from your browser settings.
-    Once removed, the extension no longer has access to Gmail or any related data.
+    All communication between the extension and the backend occurs over secure HTTPS.
+    Data sent for processing is ephemeral — it is used only for the duration of the request and then discarded.
   </p>
 
+  <h2>User Control</h2>
   <p>
-    For questions, contact: <a href="engr.saadmirza@gmail.com">engr.saadmirza@gmail.com</a>
+    You may remove the extension at any time through your browser’s settings. Once removed, it no longer has access to Gmail or any related data.
   </p>
+
+  <h2>Contact</h2>
+  <p>
+    For questions or concerns about this Privacy Policy, contact us at:
+    <a href="mailto:engr.saadmirza@gmail.com">engr.saadmirza@gmail.com</a>
+  </p>
+
+  <footer>
+    <p>© 2025 Email Writer. All rights reserved.</p>
+  </footer>
 </body>
 </html>
