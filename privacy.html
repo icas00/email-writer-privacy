@@ -46,15 +46,15 @@
   <ul>
     <li>
       When a user requests an AI-generated email reply, the text entered or selected (such as the email body and tone preference)
-      is securely transmitted to our backend API for processing.
+      is securely transmitted to our backend API for processing. The backend temporarily uses this input to generate a response using a language model,
+      then returns it immediately to the extension. No personal data, message content, or generated responses are stored or shared.
     </li>
     <li>
-      The backend temporarily uses this input to generate a response using a language model, then returns it immediately to the extension.
-      No personal data, message content, or generated responses are stored or shared.
-    </li>
-    <li>
-      The extension may use Chrome’s local storage only to save recent generation history for the user’s convenience.
+      The extension may use Chrome’s local storage only to save recent generation history and user preferences (e.g., tone selection) on the user’s device.
       This data remains entirely on the user’s device and is not transmitted anywhere.
+    </li>
+    <li>
+      The extension uses only code included in the package; the backend processes data temporarily and does not store it.
     </li>
   </ul>
 
@@ -63,12 +63,12 @@
     The extension uses minimal permissions:
   </p>
   <ul>
-    <li><strong>Storage</strong> — to save user preferences (e.g., tone and generation history) locally on the device.</li>
-    <li><strong>Host permissions</strong> — to communicate securely with Gmail and the AI backend API.</li>
+    <li><strong>Storage</strong> — to save user preferences and generation history locally on the device.</li>
+    <li><strong>Host permissions</strong> — to securely communicate with Gmail and the AI backend API.</li>
   </ul>
   <p>
     The extension does <strong>not</strong> access or modify your Gmail messages beyond what is necessary to generate replies,
-    and does not collect browsing history or personal data.
+    and does not collect browsing history, personal communications, or other personal data.
   </p>
 
   <h2>Data Security</h2>
@@ -80,6 +80,12 @@
   <h2>User Control</h2>
   <p>
     You may remove the extension at any time through your browser’s settings. Once removed, it no longer has access to Gmail or any related data.
+  </p>
+
+  <h2>Third-Party Sharing</h2>
+  <p>
+    Email Writer does not sell, share, or transfer user data to any third parties.
+    Data is used solely to generate AI email replies and improve user convenience within the extension.
   </p>
 
   <h2>Contact</h2>
